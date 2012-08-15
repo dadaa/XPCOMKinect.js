@@ -1,0 +1,2 @@
+XPCOMKinect.js
+==============
