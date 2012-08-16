@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/.  -->
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>kinect.js depth</title>
+    <style type="text/css">
+    html {
+        background-color: black;
+    }
+    #main-canvas {
+        background-color: black;
+        width: 100%;
+    }
+    </style>
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        var MAX_DEPTH = 2047;
+        var Main = {
+            start: function(context) {
+                var kinect = document.kinect;
+                if (!kinect) {
+                    alert("no kinect");
+                    return;
+                }
+                Main.kinect = kinect;
+                Main.depthBuffer = new Array(640*480);
+                var canvas = document.getElementById("main-canvas");
+                Main.context = canvas.getContext("2d");
+                Main.imagedata = Main.context.createImageData(640, 480);
+                for (var i = 0, n = 640*480*4; i < n; i++) {
+                    Main.imagedata.data[i] = 255;
+                }
+//                Main.next_getDepth();
+//                Main.next_captureDepth();
+                Main.next_bufferDepth();
+            },
+
+            next_bufferDepth: function() {
+                var time1 = (new Date()).getTime();
+//                var depthBuffer = new Array(640*480); 
+                var depthBuffer = Main.depthBuffer; 
+                Main.kinect.getDepth(depthBuffer);
+                console.log(depthBuffer.length);
+                var time2 = (new Date()).getTime();
+                for (var i = 0, n = depthBuffer.length; i < n; i++) {
+                    var depth = depthBuffer[i];
+                    var color = 255-Math.floor(depth/MAX_DEPTH*255);
+                    var index = i * 4;
+                    Main.imagedata.data[index] = 0;
+                    Main.imagedata.data[index+1] = color;
+                    Main.imagedata.data[index+2] = 0;
+                }
+                var time3 = (new Date()).getTime();
+                Main.context.putImageData(Main.imagedata, 0, 0);
+                var time4 = (new Date()).getTime();
+                
+                console.info("1:"+(time2-time1));
+                console.info("2:"+(time3-time2));
+                console.info("3:"+(time4-time3));
+                console.info("T:"+(time4-time1));
+                setTimeout(Main.next_bufferDepth, 10);
+            },
+            
+            next_getDepth: function() {
+                var time1 = (new Date()).getTime();
+                var depthBuffer = Main.kinect.getDepth();
+                var time2 = (new Date()).getTime();
+                for (var i = 0, n = depthBuffer.length; i < n; i++) {
+                    var depth = depthBuffer[i];
+                    var color = 255-Math.floor(depth/MAX_DEPTH*255);
+                    var index = i * 4;
+                    Main.imagedata.data[index] = 0;
+                    Main.imagedata.data[index+1] = color;
+                    Main.imagedata.data[index+2] = 0;
+                }
+                var time3 = (new Date()).getTime();
+                Main.context.putImageData(Main.imagedata, 0, 0);
+                var time4 = (new Date()).getTime();
+                
+                console.info("1:"+(time2-time1));
+                console.info("2:"+(time3-time2));
+                console.info("3:"+(time4-time3));
+                console.info("T:"+(time4-time1));
+                setTimeout(Main.next_getDepth, 10);
+            },
+            next_captureDepth: function() {
+                var time1 = (new Date()).getTime();
+                Main.kinect.captureDepth();
+                var time2 = (new Date()).getTime();
+                for (var i = 0, n = 640*480; i < n; i++) {
+                    var depth = Main.kinect.getDepthByIndex(i);
+                    var color = 255-Math.floor(depth/MAX_DEPTH*255);
+                    var index = i * 4;
+                    Main.imagedata.data[index] = 0;
+                    Main.imagedata.data[index+1] = color;
+                    Main.imagedata.data[index+2] = 0;
+                }
+                var time3 = (new Date()).getTime();
+                Main.context.putImageData(Main.imagedata, 0, 0);
+                var time4 = (new Date()).getTime();
+                
+                console.info("1:"+(time2-time1));
+                console.info("2:"+(time3-time2));
+                console.info("3:"+(time4-time3));
+                console.info("T:"+(time4-time1));
+                setTimeout(Main.next_getDepth, 10);
+            }
+            
+        };
+
+        $(document).ready(function() {
+            Main.start();
+        });
+    </script>
+</head>
+<body>
+<canvas id="main-canvas" width="640" height="480"></canvas>
+</body>
+</html>
