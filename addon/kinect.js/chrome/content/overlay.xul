@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<overlay id="kinect.js-browser-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    xml:lang="en" lang="en">
+    <script type="application/x-javascript" src="chrome://kinect.js/content/overlay.js"></script>
+</overlay>

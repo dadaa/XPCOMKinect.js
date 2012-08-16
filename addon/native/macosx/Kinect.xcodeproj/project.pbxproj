@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0F899F15C3BB9B003C1612 /* Kinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F899E15C3BB9B003C1612 /* Kinect.cpp */; };
+		0F0F89DE15C3DFCD003C1612 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F89DD15C3DFCD003C1612 /* libusb-1.0.a */; };
+		0F0F89E415C3E074003C1612 /* libfreenect_sync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F89E315C3E074003C1612 /* libfreenect_sync.a */; };
+		0F0F89E815C3E10D003C1612 /* libfreenect_sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0F89E715C3E10D003C1612 /* libfreenect_sync.h */; };
+		0F0F89EA15C3E114003C1612 /* libfreenect.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0F89E915C3E114003C1612 /* libfreenect.h */; };
+		0FEBECBC15D942390026D8B2 /* IKinect.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEBECBB15D942390026D8B2 /* IKinect.h */; };
+		0FEBECFD15DA36AC0026D8B2 /* KinectModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FEBECFC15DA36AC0026D8B2 /* KinectModule.cpp */; };
+		0FEBED0015DA46A40026D8B2 /* Kinect.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEBECFF15DA46A40026D8B2 /* Kinect.h */; };
+		0FEBED1415DB75350026D8B2 /* libcrmf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0515DB75350026D8B2 /* libcrmf.a */; };
+		0FEBED1515DB75350026D8B2 /* libmozalloc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0615DB75350026D8B2 /* libmozalloc.dylib */; };
+		0FEBED1615DB75350026D8B2 /* libnspr4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0715DB75350026D8B2 /* libnspr4.dylib */; };
+		0FEBED1715DB75350026D8B2 /* libnss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0815DB75350026D8B2 /* libnss.a */; };
+		0FEBED1815DB75350026D8B2 /* libnssutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0915DB75350026D8B2 /* libnssutil.a */; };
+		0FEBED1915DB75350026D8B2 /* libplc4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0A15DB75350026D8B2 /* libplc4.dylib */; };
+		0FEBED1A15DB75350026D8B2 /* libplds4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0B15DB75350026D8B2 /* libplds4.dylib */; };
+		0FEBED1B15DB75350026D8B2 /* libsmime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0C15DB75350026D8B2 /* libsmime.a */; };
+		0FEBED1C15DB75350026D8B2 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0D15DB75350026D8B2 /* libssl.a */; };
+		0FEBED1D15DB75350026D8B2 /* libunicharutil_external_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0E15DB75350026D8B2 /* libunicharutil_external_s.a */; };
+		0FEBED1E15DB75350026D8B2 /* libunicharutil_external_s.a.desc in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED0F15DB75350026D8B2 /* libunicharutil_external_s.a.desc */; };
+		0FEBED1F15DB75350026D8B2 /* libxpcom.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED1015DB75350026D8B2 /* libxpcom.dylib */; };
+		0FEBED2015DB75350026D8B2 /* libxpcomglue_s_nomozalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED1115DB75350026D8B2 /* libxpcomglue_s_nomozalloc.a */; };
+		0FEBED2115DB75350026D8B2 /* libxpcomglue_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED1215DB75350026D8B2 /* libxpcomglue_s.a */; };
+		0FEBED2215DB75350026D8B2 /* libxpcomglue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED1315DB75350026D8B2 /* libxpcomglue.a */; };
+		0FEBED2815DCB3C30026D8B2 /* XUL in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEBED2715DCB3C30026D8B2 /* XUL */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F0F899615C3B80C003C1612 /* libKinect.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libKinect.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0F899E15C3BB9B003C1612 /* Kinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Kinect.cpp; path = src/Kinect.cpp; sourceTree = "<group>"; };
+		0F0F89DD15C3DFCD003C1612 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libusb-1.0.a"; path = "/opt/local/lib/libusb-1.0.a"; sourceTree = "<absolute>"; };
+		0F0F89E315C3E074003C1612 /* libfreenect_sync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreenect_sync.a; path = /usr/local/lib/libfreenect_sync.a; sourceTree = "<absolute>"; };
+		0F0F89E715C3E10D003C1612 /* libfreenect_sync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libfreenect_sync.h; path = /usr/local/include/libfreenect/libfreenect_sync.h; sourceTree = "<absolute>"; };
+		0F0F89E915C3E114003C1612 /* libfreenect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libfreenect.h; path = /usr/local/include/libfreenect/libfreenect.h; sourceTree = "<absolute>"; };
+		0FEBECBB15D942390026D8B2 /* IKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKinect.h; path = src/IKinect.h; sourceTree = "<group>"; };
+		0FEBECFC15DA36AC0026D8B2 /* KinectModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KinectModule.cpp; path = src/KinectModule.cpp; sourceTree = "<group>"; };
+		0FEBECFF15DA46A40026D8B2 /* Kinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kinect.h; path = src/Kinect.h; sourceTree = "<group>"; };
+		0FEBED0515DB75350026D8B2 /* libcrmf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrmf.a; path = "../../../../../xulrunner-sdk/lib/libcrmf.a"; sourceTree = "<group>"; };
+		0FEBED0615DB75350026D8B2 /* libmozalloc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmozalloc.dylib; path = "../../../../../xulrunner-sdk/lib/libmozalloc.dylib"; sourceTree = "<group>"; };
+		0FEBED0715DB75350026D8B2 /* libnspr4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libnspr4.dylib; path = "../../../../../xulrunner-sdk/lib/libnspr4.dylib"; sourceTree = "<group>"; };
+		0FEBED0815DB75350026D8B2 /* libnss.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnss.a; path = "../../../../../xulrunner-sdk/lib/libnss.a"; sourceTree = "<group>"; };
+		0FEBED0915DB75350026D8B2 /* libnssutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnssutil.a; path = "../../../../../xulrunner-sdk/lib/libnssutil.a"; sourceTree = "<group>"; };
+		0FEBED0A15DB75350026D8B2 /* libplc4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libplc4.dylib; path = "../../../../../xulrunner-sdk/lib/libplc4.dylib"; sourceTree = "<group>"; };
+		0FEBED0B15DB75350026D8B2 /* libplds4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libplds4.dylib; path = "../../../../../xulrunner-sdk/lib/libplds4.dylib"; sourceTree = "<group>"; };
+		0FEBED0C15DB75350026D8B2 /* libsmime.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsmime.a; path = "../../../../../xulrunner-sdk/lib/libsmime.a"; sourceTree = "<group>"; };
+		0FEBED0D15DB75350026D8B2 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../../../xulrunner-sdk/lib/libssl.a"; sourceTree = "<group>"; };
+		0FEBED0E15DB75350026D8B2 /* libunicharutil_external_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libunicharutil_external_s.a; path = "../../../../../xulrunner-sdk/lib/libunicharutil_external_s.a"; sourceTree = "<group>"; };
+		0FEBED0F15DB75350026D8B2 /* libunicharutil_external_s.a.desc */ = {isa = PBXFileReference; lastKnownFileType = text; name = libunicharutil_external_s.a.desc; path = "../../../../../xulrunner-sdk/lib/libunicharutil_external_s.a.desc"; sourceTree = "<group>"; };
+		0FEBED1015DB75350026D8B2 /* libxpcom.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxpcom.dylib; path = "../../../../../xulrunner-sdk/lib/libxpcom.dylib"; sourceTree = "<group>"; };
+		0FEBED1115DB75350026D8B2 /* libxpcomglue_s_nomozalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxpcomglue_s_nomozalloc.a; path = "../../../../../xulrunner-sdk/lib/libxpcomglue_s_nomozalloc.a"; sourceTree = "<group>"; };
+		0FEBED1215DB75350026D8B2 /* libxpcomglue_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxpcomglue_s.a; path = "../../../../../xulrunner-sdk/lib/libxpcomglue_s.a"; sourceTree = "<group>"; };
+		0FEBED1315DB75350026D8B2 /* libxpcomglue.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxpcomglue.a; path = "../../../../../xulrunner-sdk/lib/libxpcomglue.a"; sourceTree = "<group>"; };
+		0FEBED2715DCB3C30026D8B2 /* XUL */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = XUL; path = "../../../../../xulrunner-sdk/sdk/lib/XUL"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F0F899315C3B80C003C1612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0F89DE15C3DFCD003C1612 /* libusb-1.0.a in Frameworks */,
+				0F0F89E415C3E074003C1612 /* libfreenect_sync.a in Frameworks */,
+				0FEBED1415DB75350026D8B2 /* libcrmf.a in Frameworks */,
+				0FEBED1515DB75350026D8B2 /* libmozalloc.dylib in Frameworks */,
+				0FEBED1615DB75350026D8B2 /* libnspr4.dylib in Frameworks */,
+				0FEBED1715DB75350026D8B2 /* libnss.a in Frameworks */,
+				0FEBED1815DB75350026D8B2 /* libnssutil.a in Frameworks */,
+				0FEBED1915DB75350026D8B2 /* libplc4.dylib in Frameworks */,
+				0FEBED1A15DB75350026D8B2 /* libplds4.dylib in Frameworks */,
+				0FEBED1B15DB75350026D8B2 /* libsmime.a in Frameworks */,
+				0FEBED1C15DB75350026D8B2 /* libssl.a in Frameworks */,
+				0FEBED1D15DB75350026D8B2 /* libunicharutil_external_s.a in Frameworks */,
+				0FEBED1E15DB75350026D8B2 /* libunicharutil_external_s.a.desc in Frameworks */,
+				0FEBED1F15DB75350026D8B2 /* libxpcom.dylib in Frameworks */,
+				0FEBED2015DB75350026D8B2 /* libxpcomglue_s_nomozalloc.a in Frameworks */,
+				0FEBED2115DB75350026D8B2 /* libxpcomglue_s.a in Frameworks */,
+				0FEBED2215DB75350026D8B2 /* libxpcomglue.a in Frameworks */,
+				0FEBED2815DCB3C30026D8B2 /* XUL in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0F898B15C3B80C003C1612 = {
+			isa = PBXGroup;
+			children = (
+				0FEBED2715DCB3C30026D8B2 /* XUL */,
+				0FEBECFB15D94B9B0026D8B2 /* xulrunner-lib */,
+				0F0F89EB15C3E124003C1612 /* lib */,
+				0F0F89A715C3BC92003C1612 /* src */,
+				0F0F899715C3B80C003C1612 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F0F899715C3B80C003C1612 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F0F899615C3B80C003C1612 /* libKinect.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F0F89A715C3BC92003C1612 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0FEBECFF15DA46A40026D8B2 /* Kinect.h */,
+				0FEBECFC15DA36AC0026D8B2 /* KinectModule.cpp */,
+				0FEBECBB15D942390026D8B2 /* IKinect.h */,
+				0F0F899E15C3BB9B003C1612 /* Kinect.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		0F0F89EB15C3E124003C1612 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0F0F89E915C3E114003C1612 /* libfreenect.h */,
+				0F0F89E715C3E10D003C1612 /* libfreenect_sync.h */,
+				0F0F89E315C3E074003C1612 /* libfreenect_sync.a */,
+				0F0F89DD15C3DFCD003C1612 /* libusb-1.0.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		0FEBECFB15D94B9B0026D8B2 /* xulrunner-lib */ = {
+			isa = PBXGroup;
+			children = (
+				0FEBED0515DB75350026D8B2 /* libcrmf.a */,
+				0FEBED0615DB75350026D8B2 /* libmozalloc.dylib */,
+				0FEBED0715DB75350026D8B2 /* libnspr4.dylib */,
+				0FEBED0815DB75350026D8B2 /* libnss.a */,
+				0FEBED0915DB75350026D8B2 /* libnssutil.a */,
+				0FEBED0A15DB75350026D8B2 /* libplc4.dylib */,
+				0FEBED0B15DB75350026D8B2 /* libplds4.dylib */,
+				0FEBED0C15DB75350026D8B2 /* libsmime.a */,
+				0FEBED0D15DB75350026D8B2 /* libssl.a */,
+				0FEBED0E15DB75350026D8B2 /* libunicharutil_external_s.a */,
+				0FEBED0F15DB75350026D8B2 /* libunicharutil_external_s.a.desc */,
+				0FEBED1015DB75350026D8B2 /* libxpcom.dylib */,
+				0FEBED1115DB75350026D8B2 /* libxpcomglue_s_nomozalloc.a */,
+				0FEBED1215DB75350026D8B2 /* libxpcomglue_s.a */,
+				0FEBED1315DB75350026D8B2 /* libxpcomglue.a */,
+			);
+			name = "xulrunner-lib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F0F899415C3B80C003C1612 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0F89E815C3E10D003C1612 /* libfreenect_sync.h in Headers */,
+				0F0F89EA15C3E114003C1612 /* libfreenect.h in Headers */,
+				0FEBECBC15D942390026D8B2 /* IKinect.h in Headers */,
+				0FEBED0015DA46A40026D8B2 /* Kinect.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F0F899515C3B80C003C1612 /* Kinect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F0F899A15C3B80C003C1612 /* Build configuration list for PBXNativeTarget "Kinect" */;
+			buildPhases = (
+				0F0F899215C3B80C003C1612 /* Sources */,
+				0F0F899315C3B80C003C1612 /* Frameworks */,
+				0F0F899415C3B80C003C1612 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kinect;
+			productName = KinectBridge;
+			productReference = 0F0F899615C3B80C003C1612 /* libKinect.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F0F898D15C3B80C003C1612 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 0F0F899015C3B80C003C1612 /* Build configuration list for PBXProject "Kinect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F0F898B15C3B80C003C1612;
+			productRefGroup = 0F0F899715C3B80C003C1612 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F0F899515C3B80C003C1612 /* Kinect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F0F899215C3B80C003C1612 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0F899F15C3BB9B003C1612 /* Kinect.cpp in Sources */,
+				0FEBECFD15DA36AC0026D8B2 /* KinectModule.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F0F899815C3B80C003C1612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/WORKS/MOZILLA/projects/xulrunner-sdk/include/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F0F899915C3B80C003C1612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/WORKS/MOZILLA/projects/xulrunner-sdk/include/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F0F899B15C3B80C003C1612 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/freenect\"",
+					/opt/local/lib,
+					"\"$(SRCROOT)/../../../../../../xulrunner-sdk/lib\"",
+					"\"$(SRCROOT)/../../../../../xulrunner-sdk/lib\"",
+					/usr/local/Cellar/spidermonkey/1.8.5/lib,
+					"\"$(SRCROOT)/../../../../../Firefox/mozilla-central/obj-ff-dbg/js/src\"",
+					"\"$(SRCROOT)/../../../../../xulrunner-sdk/sdk/lib\"",
+				);
+				PRODUCT_NAME = Kinect;
+			};
+			name = Debug;
+		};
+		0F0F899C15C3B80C003C1612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/freenect\"",
+					/opt/local/lib,
+					"\"$(SRCROOT)/../../../../../../xulrunner-sdk/lib\"",
+					"\"$(SRCROOT)/../../../../../xulrunner-sdk/lib\"",
+					/usr/local/Cellar/spidermonkey/1.8.5/lib,
+					"\"$(SRCROOT)/../../../../../Firefox/mozilla-central/obj-ff-dbg/js/src\"",
+					"\"$(SRCROOT)/../../../../../xulrunner-sdk/sdk/lib\"",
+				);
+				PRODUCT_NAME = Kinect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F0F899015C3B80C003C1612 /* Build configuration list for PBXProject "Kinect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0F899815C3B80C003C1612 /* Debug */,
+				0F0F899915C3B80C003C1612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F0F899A15C3B80C003C1612 /* Build configuration list for PBXNativeTarget "Kinect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0F899B15C3B80C003C1612 /* Debug */,
+				0F0F899C15C3B80C003C1612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F0F898D15C3B80C003C1612 /* Project object */;
+}

@@ -1,0 +1,15 @@
+#include "nsISupports.idl"
+[scriptable, uuid(DBFA43DA-0247-4E2E-B4EE-26DA71FF31C8)]
+interface IKinect : nsISupports
+{
+    [implicit_jscontext]
+    void getDepthJSVAL(in jsval val);
+    [implicit_jscontext]
+    void getVideoJSVAL(in jsval val);
+
+    void getDepth(out unsigned long bufferSize, [array, size_is(bufferSize), retval] out short buffer);
+    void getVideo(out unsigned long bufferSize, [array, size_is(bufferSize), retval] out long buffer);
+
+    void captureDepth();
+    void getDepthByIndex(in unsigned long index, [retval] out short pixel);
+};

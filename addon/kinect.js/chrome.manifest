@@ -1,0 +1,5 @@
+content kinect.js chrome/content/
+overlay chrome://browser/content/browser.xul chrome://kinect.js/content/overlay.xul
+binary-component components/libKinect.dylib
+interfaces components/IKinect.xpt
+contract @mozilla-japan.org/Kinect;1 {dbfa43da-0247-4e2e-b4ee-26da71ff31c8}
